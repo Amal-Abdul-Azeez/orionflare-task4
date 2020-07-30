@@ -1,0 +1,48 @@
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#first{
+  font-family: Oswald;
+  color: white;
+  position: relative;
+  right: 10px;
+  top: 50px;
+  
+}
+#last{
+  font-family: Oswald;
+  color: white;
+  position: relative;
+  left: 150px;
+  bottom: 370px;
+}
+
+.toggle-btn{
+  position: relative;
+  left: 15px;
+ margin: 20px;
+  width: 80px;
+  height: 40px;
+  background-color: grey;
+  border-radius: 30px;
+  padding: 5px;
+  transition: all 300ms ease-in-out;
+}
+.toggle-btn > .innercircle{
+ 
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  transition: all 300ms ease-in-out;
+}
+.toggle-btn.active{
+  background-color: #00acee;
+
+}
+.toggle-btn.active > .innercircle{
+  margin-left: 40px;
+}

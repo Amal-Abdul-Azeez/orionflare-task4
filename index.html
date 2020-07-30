@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="black">
+    <div class="container" >
+<p id="first">ON</p> <div class="toggle-btn" onclick="myfunc(); this.classList.toggle('active')" ><div class="innercircle"></div></div>  
+         <img  id="pic" src="bulboff.jpg"  height="294px" width="214px"><p id="last">OFF</p>
+    
+</div>
+<script>
+
+function myfunc(){
+  
+   var image=document.getElementById("pic").getAttribute("src");
+   if(image=="bulboff.jpg"){
+    document.getElementById('pic').src="bulbon.jpg";
+   
+   }
+    else{
+        document.getElementById('pic').src="bulboff.jpg";
+        
+    }
+   
+  
+}</script>
+    </body>
+</html>
